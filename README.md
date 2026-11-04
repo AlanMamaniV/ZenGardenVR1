@@ -1,120 +1,107 @@
-# Zen Garden VR: Entorno Inmersivo Contemplativo y Templo Meditativo a Escala Humana 1:1
+# Zen Garden VR: Immersive Contemplative Sanctuary and Meditative Temple at 1:1 Human Scale
 
-**Documento de Entrega para Evaluación Entre Pares (Peer Review)**  
-**Curso:** Realidad Virtual  
-**Entorno de Desarrollo:** Unity 6 / URP (Universal Render Pipeline)  
-**Estándar XR:** OpenXR / Unity Input System (XR Tracked Pose Driver)  
+**Peer Review Submission Document**  
+**Course:** Virtual Reality  
+**Development Environment:** Unity 6 / Universal Render Pipeline (URP)  
+**XR Standard:** OpenXR / Unity Input System (`TrackedPoseDriver`)  
 
 ---
 
-## 1. Título del Proyecto
+## 1. Project Title
 
-> **Zen Garden VR: Santuario Contemplativo Japonés y Templo Meditativo a Escala Humana (1:1)**
+> **Zen Garden VR: Japanese Contemplative Sanctuary and Meditative Temple at 1:1 Human Scale**
 
 <p align="center">
-  <img src="Screenshots/Vista_General.png" alt="Vista General del Jardín Zen VR" width="100%">
+  <img src="Screenshots/Vista_General.png" alt="Zen Garden VR Overview" width="100%">
 </p>
 
 ---
 
-## 2. Breve Descripción de la Escena
+## 2. Brief Scene Description
 
-Este proyecto presenta un entorno 3D **imaginario y contemplativo** inspirado en los jardines zen tradicionales japoneses (*Karesansui*) y la arquitectura sagrada de templos budistas y santuarios sintoístas. El espacio está diseñado específicamente para promover estados de relajación, introspección y meditación guiada en Realidad Virtual.
+This project showcases an **imaginary and contemplative 3D environment** inspired by traditional Japanese dry landscape gardens (*Karesansui*) and sacred Buddhist/Shinto temple architecture. The spatial composition is engineered specifically to foster mindfulness, deep relaxation, and spatial presence in Virtual Reality.
 
-### Composición Arquitectónica y Espacial del Entorno:
-1. **Patio Central de Arena Zen (*Karesansui*):** Una amplia explanada de $24\times24\text{ m}$ con patrones de rastrillado zen concéntricos y ondulados, confinada por vigas perimetrales de madera oscura de teca y un muro zen de fondo.
-2. **Sendero de Piedras de Paso (*Tobi-Ishi*):** Siete losas de piedra que guían de manera natural el recorrido visual y la atención del usuario desde el punto de inicio hacia el santuario.
-3. **Portal Ceremonial Torii:** Entrada ceremonial tradicional de $3.8\text{ m}$ de altura que demarca la transición del mundo secular al espacio sagrado, compuesta por bases cilíndricas de piedra, dos grandes columnas de cedro rojo (*Hashira*), un dintel curvado superior (*Kasagi*), travesaño secundario (*Nuki*) y una placa votiva (*Gakuzuka*).
-4. **Templo / Pagoda Meditativa de Tres Niveles:** Estructura arquitectónica de $7.2\times7.2\text{ m}$ de base con plataforma escalonada de piedra y madera, tatami ceremonial, cuatro columnas maestras, vigas estructurales, aleros voladizos escalonados, aguja sagrada (*Sōrin*) con remate de esfera dorada y una gran campana zen de bronce (*Bonshō*) suspendida del techo.
-5. **Altar Zen Central:** Mesa de ofrendas elevada ($0.85\text{ m}$ de altura) con quemador de incienso (*Kōrō*), iluminación puntual cálida y un **orbe espiritual flotante** con material emisivo que rota suavemente en el eje Y.
-6. **Farolas Gemelas de Piedra (*Tōrō*):** Ubicadas a ambos lados del camino, compuestas por base (*Kiso*), fuste (*Sao*), repisa (*Chūdai*), cámara de luz translúcida de papel *Shoji* (*Hibukuro*) con fuentes de luz puntual internas, tejadillo (*Kasa*) y remate joya (*Hōju*).
-7. **Estanque de Lotos y Carpas:** Lámina de agua circular reflectante de $5\text{ m}$ de diámetro rodeada por 14 rocas perimetrales, con hojas de loto flotantes y una flor de loto central.
-8. **Isla de Rocas Zen (*Iwakura*):** Montículo de musgo orgánico que alberga una tríada de piedras de meditación asimétricas (Piedra Padre, Piedra Guardián y Piedra Hijo) con orientaciones naturales.
+### Architectural and Spatial Composition:
+1. **Central Zen Sand Garden (*Karesansui*):** An expansive $24\times24\text{ m}$ gravel courtyard featuring procedural sinusoidal rake grooves, enclosed by dark teak boundary beams and a contemplative rear boundary wall.
+2. **Stepping Stones Path (*Tobi-Ishi*):** A sequence of seven polished stone slabs guiding visual attention and natural movement from the user's initial spawn point toward the sanctuary.
+3. **Ceremonial Torii Gate:** A traditional $3.8\text{ m}$ portal demarcating the transition from the mundane to sacred space, comprising cylindrical stone pedestals (*Kamebara*), twin vermilion cedar pillars (*Hashira*), a curved upper lintel (*Kasagi*), a secondary tie-beam (*Nuki*), and a central tablet (*Gakuzuka*).
+4. **Three-Tiered Meditative Pagoda:** A $7.2\times7.2\text{ m}$ foundation structure with stepped stone and wood terracing, ceremonial tatami matting, four structural pillars, crossbeam grid, multi-tiered flared eaves, a sacred bronze spire (*Sōrin*) with a golden sphere finial, and a suspended meditation temple bell (*Bonshō*).
+5. **Central Meditation Altar:** An elevated offering table ($0.85\text{ m}$ height) featuring a bronze incense burner (*Kōrō*), warm accent illumination, and a **floating spiritual crystal orb** with emissive properties executing smooth continuous Y-axis rotation.
+6. **Twin Japanese Stone Lanterns (*Tōrō*):** Symmetrically placed flanking lanterns consisting of a base (*Kiso*), shaft (*Sao*), intermediate platform (*Chūdai*), translucent Shoji paper light chamber (*Hibukuro*) housing internal warm point lights, umbrella roof (*Kasa*), and jewel finial (*Hōju*).
+7. **Lotus and Koi Reflective Pond:** A $5\text{ m}$ diameter circular water basin bordered by 14 natural perimeter stones, floating lotus pads, and a sacred blooming lotus flower.
+8. **Zen Rock Arrangement (*Iwakura*):** An organic moss mound supporting a classical triad of weathered granite meditation stones (Father Stone, Guardian Stone, and Child Stone) oriented with natural asymmetry.
 
 ---
 
-## 3. Instrucciones Detalladas para los Evaluadores
+## 3. Detailed Instructions for Evaluators
 
-Siga estos sencillos pasos para cargar, verificar y experimentar la escena correctamente:
+Please follow these steps to load, inspect, and experience the scene:
 
-### Paso 1: Abrir el Proyecto en Unity Hub
-1. Abra **Unity Hub**.
-2. Haga clic en **Add** (Añadir) > **Add project from disk** y seleccione la carpeta raíz del proyecto descomprimido.
-3. Abra el proyecto con **Unity 6 (6000.x)** o **Unity 2022.3 LTS / 2023.x** con el paquete Universal Render Pipeline (URP).
-4. Espere a que Unity finalice la importación inicial de paquetes y activos.
+### Step 1: Open the Project in Unity Hub
+1. Launch **Unity Hub**.
+2. Click **Add** > **Add project from disk** and select the unzipped project root directory.
+3. Open the project using **Unity 6 (6000.x)** or **Unity 2022.3 LTS / 2023.x** configured with the Universal Render Pipeline (URP).
+4. Allow Unity to finish compiling and importing packages.
 
-### Paso 2: Cargar la Escena de Evaluación
-1. En la ventana **Project** (inferior), diríjase a la ruta:
+### Step 2: Load the Evaluation Scene
+1. In the **Project** window (bottom panel), navigate to:
    ```text
    Assets / Scenes / ZenGardenVR.unity
    ```
-2. Haga doble clic en **`ZenGardenVR.unity`** para abrir la escena en el Editor.  
-   *(Nota de respaldo: Si desea regenerar la escena completa desde cero en cualquier momento, puede ir al menú superior de Unity: `Herramientas VR` > `Generar Escena Completa`).*
+2. Double-click **`ZenGardenVR.unity`** to open the scene.  
+   *(Backup Notice: If you wish to regenerate the entire scene from scratch at any moment, use the top menu bar: `Herramientas VR` > `Generar Escena Completa`).*
 
-### Paso 3: Verificar la Configuración de OpenXR
-1. En la barra superior, acceda a **Edit** > **Project Settings...**
-2. En la columna izquierda, seleccione **XR Plug-in Management**.
-3. En la pestaña con el icono de monitor de PC (**Windows, Mac, Linux settings**):
-   * Verifique que la casilla **OpenXR** esté seleccionada / marcada.
-   * *(Opcional)* Despliegue el submenú **OpenXR** dentro de *XR Plug-in Management* y confirme que los perfiles de interacción deseados (ej. *Oculus Touch Controller Profile*, *HTC Vive Controller Profile* o *Eye Gaze / Head Pose Interaction*) estén activos.
+### Step 3: Verify OpenXR Configuration
+1. In the top menu bar, select **Edit** > **Project Settings...**
+2. In the left navigation pane, select **XR Plug-in Management**.
+3. Under the desktop monitor tab (**Windows, Mac, Linux settings**):
+   * Confirm that the **OpenXR** checkbox is enabled / checked.
+   * *(Optional)* Expand the **OpenXR** sub-item under *XR Plug-in Management* to confirm enabled interaction profiles (e.g., *Oculus Touch Controller Profile*, *HTC Vive Controller Profile*, or *Eye Gaze / Head Pose Interaction*).
 
-### Paso 4: Ejecutar y Probar la Escena
-1. En la parte superior central del editor de Unity, pulse el botón **Play (▶)**.
-2. Comprobaciones inmediatas:
-   * **Seguimiento de Cabeza (*Head Tracking*):** Si utiliza un visor VR o el simulador de dispositivos XR de Unity, mueva la cabeza para verificar el seguimiento posicional y rotacional completo 6DoF a través del componente `TrackedPoseDriver`.
-   * **Animación Procedural:** Observe cómo el orbe/cristal zen situado sobre el altar rota continuamente con suavidad en su eje vertical Y.
-   * **Audio Inmersivo:** Escuchará de inmediato el tono armónico ambiental continuo generado proceduralmente (frecuencias sagradas de cuenco tibetano: 216 Hz, 432 Hz y 648 Hz).
-3. Para finalizar la prueba, vuelva a pulsar **Play (▶)**.
-
----
-
-## 4. Restricciones de Hardware
-
-> **Aclaración Importante para el Evaluador: NO se requiere obligatoriamente un visor físico de Realidad Virtual para evaluar este proyecto.**
-
-* **Evaluación sin restricciones de hardware (Modo Editor / Pantalla Convencional):**
-  * La escena está totalmente adaptada para ser inspeccionada, validada y ejecutada en cualquier ordenador directamente desde la vista **Scene** y la vista **Game** del Editor de Unity.
-  * Al pulsar **Play (▶)**, la cámara se posicionará a la altura exacta de los ojos (1.65 m), el script de animación `RotadorSuave` se ejecutará en tiempo real y el audio ambiental sonará a través de los altavoces o auriculares convencionales del equipo.
-  * Los evaluadores que utilicen el paquete *XR Device Simulator* de Unity podrán simular el giro y traslación del visor con el ratón y teclado (clic derecho + WASD).
-
-* **Evaluación con hardware físico de RV (Opcional):**
-  * Si el evaluador dispone de un visor de PC VR compatible con OpenXR (**Meta Quest 2 / 3 / Pro** mediante Meta Quest Link, AirLink o Virtual Desktop; **HTC VIVE / Cosmos**; **Valve Index**; o visores **Windows Mixed Reality**), la escena se transferirá automáticamente al visor al pulsar Play gracias al plugin OpenXR y al componente `TrackedPoseDriver`, ofreciendo inmersión estereoscópica 1:1 inmediata.
+### Step 4: Enter Play Mode and Test
+1. Click the **Play (▶)** button located in the top-center toolbar.
+2. Immediate verification checks:
+   * **Head Tracking:** When using a VR headset or the Unity XR Device Simulator, move your head/view to verify 6DoF rotational and positional tracking handled by the `TrackedPoseDriver` component.
+   * **Procedural Animation:** Observe the meditation crystal orb hovering above the altar rotating smoothly around its vertical Y-axis.
+   * **Ambient Audio:** You will immediately hear the synthetic harmonic Tibetan singing bowl ambient drone looping seamlessly (calibrating fundamental frequencies: 216 Hz, 432 Hz, and 648 Hz).
+3. To exit the evaluation, click **Play (▶)** again.
 
 ---
 
-## 5. Justificación Técnica de la Rúbrica de Evaluación
+## 4. Hardware Constraints
 
-| Criterio de la Rúbrica | Implementación en el Proyecto | Justificación Técnica |
+> **Important Notice for Evaluators: A physical Virtual Reality headset is NOT required to evaluate this project.**
+
+* **Evaluation without Hardware Restrictions (Editor Mode / Standard Display):**
+  * The scene is fully functional and evaluable on any standard computer directly through the Unity Editor's **Scene** and **Game** views.
+  * Upon pressing **Play (▶)**, the camera positions automatically at human eye level ($1.65\text{ m}$), the `RotadorSuave` animation script executes in real-time, and ambient audio plays through standard computer speakers or headphones.
+  * Evaluators with the *XR Device Simulator* package enabled can freely simulate head rotation and movement via mouse and keyboard (right-click + WASD).
+
+* **Evaluation with Physical VR Hardware (Optional):**
+  * If a tethered or wireless PC VR headset is available (**Meta Quest 2 / 3 / Pro** via Quest Link, AirLink, or Virtual Desktop; **HTC VIVE / Cosmos**; **Valve Index**; or **Windows Mixed Reality**), the scene connects automatically upon entering Play mode through OpenXR and `TrackedPoseDriver`, providing full stereoscopic 1:1 immersion.
+
+---
+
+## 5. Technical Rubric Justification
+
+| Rubric Criteria | Project Implementation | Technical Justification |
 | :--- | :--- | :--- |
-| **1. Múltiples Objetos 3D Primitivos** | Cubos, Cilindros, Esferas y Planos combinados armónicamente. | **Planos:** Superficie de arena zen ($24\times24\text{ m}$) y tatami ceremonial.<br>**Cubos:** Plataformas escalonadas, vigas de techumbre, dintel y travesaño Torii, muros y patas del altar.<br>**Cilindros:** Columnas del templo, pilares del Torii, fustes de farolas, cuerpo de la campana zen y estanque circular.<br>**Esferas:** Piedras naturales del jardín, cúpulas de linternas, remate *Hōju*, quemador de incienso y flor de loto. |
-| **2. Transformaciones Jerárquicas con Objetos Padre Vacíos** | Organización modular estricta bajo GameObjects vacíos como nodos raíz. | Cada estructura compuesta (`Portal_Torii`, `Templo_Pagoda_Zen`, `Altar_Meditativo`, `Linterna_Toro_Izquierda`, `Linterna_Toro_Derecha`, `Estanque_Loto_Zen`, `Isla_Rocas_Karesansui`, `Camino_Piedras_Paso`, `[VR Rig] Jugador`) depende de un GameObject padre vacío. Esto permite reubicar, rotar o reescalar el altar, la pagoda o el Torii completos modificando únicamente el `Transform` del padre, manteniendo intactas las relaciones espaciales relativas de todos sus elementos hijos. |
-| **3. Materiales con Texturas Mapeadas** | 8 Texturas procedurales PBR con repetición (*tiling*). | Se programó un generador procedural (`Texture2D`) que crea y guarda archivos PNG nativos en `Assets/ZenGarden_VR/Texturas/`: arena zen rastrillada, madera de cedro rojo, teca oscura, piedra musgosa, agua cáustica, papel *shoji* translúcido, oro cepillado y hojas de loto. Los materiales configuran propiedades PBR completas (*Base Color*, *Base Map*, *Metallic*, *Smoothness* y *Emission*), con factores de repetición calibrados métricamente. |
-| **4. Escala Humana para RV (1:1 en metros)** | 1 Unidad de Unity = 1 Metro real.<br>Altura de ojos = 1.65 m. | Toda la arquitectura respeta proporciones ergonómicas reales: altura del Torii de $3.8\text{ m}$, mesa de altar a $0.85\text{ m}$, peldaños de $0.15\text{ m}$, farolas de $2.1\text{ m}$. El rig de cámara (`[VR Rig] Jugador`) posiciona la `Main Camera` a una altura local exacta de **$Y = 1.65\text{ m}$** (promedio antropométrico de visión humana) y cuenta con el componente estándar **`TrackedPoseDriver`** para seguimiento de cabeza. |
-| **5. Iluminación y Sombras Suaves** | Directional Light zen matutina + Point Lights ornamentales. | La escena cuenta con una `Directional Light` principal (`Sol_Meditativo_VR`) orientada a $46^\circ$ con temperatura cálida ($1.0, 0.96, 0.88$) y **Soft Shadows** activadas para evitar sombras duras poco naturales. Adicionalmente, cuenta con tres `Point Lights` con sombras suaves: dos dentro de las cámaras de papel de las linternas de piedra ($4.5\text{ m}$ de alcance, tono ámbar cálido) y una sobre el altar. |
-| **6. Extras Opcionales (Animación y Audio)** | Script `RotadorSuave.cs` + Audio continuo en formato WAV. | **Animación:** El orbe de cristal sobre el altar incorpora el componente `RotadorSuave.cs` que aplica una rotación suave y configurable sobre el eje Y ($30^\circ/\text{s}$).<br>**Audio:** Un GameObject `Emisor_Audio_Ambiental` con `AudioSource` configurado en bucle reproduce un clip de audio de cuenco tibetano zen sintetizado matemáticamente en PCM WAV de 16 bits sin dependencias externas. |
+| **1. Multiple 3D Primitives** | Cubes, Cylinders, Spheres, and Planes harmoniously combined. | **Planes:** Zen sand courtyard surface ($24\times24\text{ m}$) and ceremonial tatami mat.<br>**Cubes:** Stepped stone foundations, structural beams, Torii lintels/crossbeams, walls, and altar legs.<br>**Cylinders:** Temple columns, Torii pillars, lantern shafts, bell body, and circular pond basin.<br>**Spheres:** Natural garden boulders, lantern domes, *Hōju* finials, incense vessel, and sacred lotus bud. |
+| **2. Hierarchical Transformations via Empty Parent GameObjects** | Strict modular organization under empty GameObjects as local roots. | Every composite structure (`Portal_Torii`, `Templo_Pagoda_Zen`, `Altar_Meditativo`, `Linterna_Toro_Izquierda`, `Linterna_Toro_Derecha`, `Estanque_Loto_Zen`, `Isla_Rocas_Karesansui`, `Camino_Piedras_Paso`, `[VR Rig] Jugador`) is parented under an empty GameObject. This allows moving, rotating, or scaling the entire pagoda, altar, or Torii gate atomically by altering only the parent's `Transform`, preserving internal relative offsets without breaking child alignments. |
+| **3. Materials with Mapped Textures** | 8 Procedural PBR textures with UV tiling. | A dedicated procedural generator (`Texture2D`) creates and saves native PNG assets to disk (`Assets/ZenGarden_VR/Texturas/`): raked sand waves, red cedar grain, dark teak, mossy stone, water caustics, Shoji lattice paper, brushed gold, and lotus foliage. All materials configure full PBR properties (*Base Color*, *Base Map*, *Metallic*, *Smoothness*, and *Emission*) with metric tiling factors. |
+| **4. Human Scale for VR (1:1 in Meters)** | 1 Unity Unit = 1 Real-world Meter.<br>Human eye height = 1.65 m. | All architecture strictly follows ergonomic architectural proportions: Torii height is $3.8\text{ m}$, altar table sits at $0.85\text{ m}$, steps measure $0.15\text{ m}$, and lanterns stand at $2.1\text{ m}$. The camera rig (`[VR Rig] Jugador`) places the `Main Camera` at an exact local height of **$Y = 1.65\text{ m}$** (human eye-level average), coupled with the standard **`TrackedPoseDriver`** component for 6DoF tracking. |
+| **5. Lighting and Soft Shadows** | Directional Light + Warm ornamental Point Lights. | The environment uses a primary `Directional Light` (`Sol_Meditativo_VR`) set at $46^\circ$ with a serene warm morning color ($1.0, 0.96, 0.88$) and **Soft Shadows** enabled. In addition, three warm **Point Lights** with soft shadows provide localized illumination: two inside the stone lanterns ($4.5\text{ m}$ radius) and one above the altar incense burner. |
+| **6. Optional Extras (Animation & Audio)** | `RotadorSuave.cs` script + Procedural WAV audio loop. | **Animation:** The altar's spiritual crystal incorporates the [`RotadorSuave.cs`]() component, applying smooth Y-axis rotation ($30^\circ/\text{s}$).<br>**Audio:** A dedicated `Emisor_Audio_Ambiental` GameObject with an `AudioSource` continuously loops a synthesized 16-bit PCM WAV Tibetan singing bowl harmonic tone without external dependencies. |
 
 ---
 
-## 6. Capturas de Pantalla y Textos de Leyenda
+## 6. Project Screenshots and Submission Captions
 
-### Galería Visual del Proyecto en Unity
+### Visual Gallery of the Project in Unity
 
-| Vista Inmersiva de la Escena (1:1) | Jerarquía y Configuración de Cámara VR (Inspector) |
+| Immersive 1:1 Scale Overview | Hierarchy & Inspector (TrackedPoseDriver) |
 | :---: | :---: |
-| ![Vista Inmersiva](Screenshots/Vista_General.png) | ![Inspector VR](Screenshots/Inspector_VR.png) |
+| ![Zen Garden Overview](Screenshots/Vista_General.png) | ![VR Camera Configuration](Screenshots/Inspector_VR.png) |
 
 ---
 
-### Leyenda para la Captura de Pantalla del Proyecto
-
-> **Archivo:** `Captura_ZenGardenVR_Inspector.png` (o `Screenshots/Inspector_VR.png`)  
-> **Leyenda / Comentario de la Imagen:**  
-> *"Captura general del proyecto en Unity Editor mostrando la escena `ZenGardenVR.unity`. En la ventana Scene se aprecia la perspectiva inmersiva del jardín zen a escala 1:1 tomada desde el punto de vista del usuario (Y = 1.65 m), observándose el portal Torii, el camino de piedras, las farolas de piedra con iluminación puntual cálida, el estanque de lotos reflectante y la pagoda meditativa al fondo iluminada por el sol zen con sombras suaves. En el panel Hierarchy se evidencia la estricta organización jerárquica mediante GameObjects vacíos padres, y en el Inspector se destaca la selección de la Main Camera con el componente TrackedPoseDriver y la posición calibrada a 1.65 metros."*
-
----
-
-### Leyenda para el Archivo Comprimido ZIP
-
-> **Archivo:** `ZenGardenVR_Entrega_PeerReview.zip`  
-> **Leyenda / Comentario de Entrega:**  
-> *"El archivo comprimido ZIP contiene la estructura limpia, canónica y completa del proyecto Unity necesaria para su evaluación: carpetas `Assets` (incluyendo escenas, scripts de editor y runtime, texturas y materiales), `Packages` (con el manifiesto de dependencias URP, Input System y XR) y `ProjectSettings` (con la configuración de calidad, físicas, tags y OpenXR). Se han omitido deliberadamente las carpetas temporales generadas localmente (`Library`, `Temp`, `Logs`, `Builds`) para evitar redundancia de datos, garantizar un peso óptimo de descarga y asegurar una importación limpia y reproducible en el equipo del evaluador."*
