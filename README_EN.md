@@ -1,7 +1,7 @@
 # Zen Garden VR: Immersive Contemplative Sanctuary and Meditative Temple at 1:1 Human Scale
 
 **Peer Review Submission Document**  
-**Course:** Virtual Reality
+**Course:** Advanced Virtual Reality in Unity  
 **Development Environment:** Unity 6 / Universal Render Pipeline (URP)  
 **XR Standard:** OpenXR / Unity Input System (`TrackedPoseDriver`)  
 
@@ -10,6 +10,10 @@
 ## 1. Project Title
 
 > **Zen Garden VR: Japanese Contemplative Sanctuary and Meditative Temple at 1:1 Human Scale**
+
+<p align="center">
+  <img src="Screenshots/Vista_General.png" alt="Zen Garden VR Overview" width="100%">
+</p>
 
 ---
 
@@ -91,3 +95,26 @@ Please follow these steps to load, inspect, and experience the scene:
 
 ---
 
+## 6. Project Screenshots and Submission Captions
+
+### Visual Gallery of the Project in Unity
+
+| Immersive 1:1 Scale Overview | Hierarchy & Inspector (TrackedPoseDriver) |
+| :---: | :---: |
+| ![Zen Garden Overview](Screenshots/Vista_General.png) | ![VR Camera Configuration](Screenshots/Inspector_VR.png) |
+
+---
+
+### Caption for the Project Screenshot
+
+> **Filename:** `Screenshot_ZenGardenVR_Inspector.png` (or `Screenshots/Inspector_VR.png`)  
+> **Image Caption / Notes:**  
+> *"Full Unity Editor overview displaying the `ZenGardenVR.unity` scene. The Scene view illustrates the 1:1 scale immersive perspective of the Zen garden captured from the human eye level ($Y = 1.65\text{ m}$), showing the Torii portal, stepping stone path, illuminated stone lanterns, reflective lotus pond, and meditative pagoda in the background bathed in soft morning sunlight. The Hierarchy window shows the strict modular organization via empty parent GameObjects, while the Inspector highlights the Main Camera configuration with the TrackedPoseDriver component and the calibrated 1.65-meter eye height."*
+
+---
+
+### Caption for the Compressed ZIP Archive
+
+> **Filename:** `ZenGardenVR_PeerReview_Submission.zip`  
+> **Submission Caption / Notes:**  
+> *"This compressed ZIP archive contains the complete, canonical Unity project structure required for evaluation: the `Assets` folder (including scene files, editor/runtime scripts, textures, and materials), `Packages` (URP, Input System, and XR dependencies manifest), and `ProjectSettings` (quality, physics, tags, and OpenXR configuration). Local transient folders (`Library`, `Temp`, `Logs`, `Builds`) have been purposefully excluded to avoid data redundancy, ensure optimal download speed, and guarantee a clean, reproducible import on the evaluator's machine."*

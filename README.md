@@ -1,7 +1,7 @@
 # Zen Garden VR: Entorno Inmersivo Contemplativo y Templo Meditativo a Escala Humana 1:1
 
 **Documento de Entrega para Evaluación Entre Pares (Peer Review)**  
-**Curso:** Realidad Virtual 
+**Curso:** Realidad Virtual Avanzada en Unity  
 **Entorno de Desarrollo:** Unity 6 / URP (Universal Render Pipeline)  
 **Estándar XR:** OpenXR / Unity Input System (XR Tracked Pose Driver)  
 
@@ -10,6 +10,10 @@
 ## 1. Título del Proyecto
 
 > **Zen Garden VR: Santuario Contemplativo Japonés y Templo Meditativo a Escala Humana (1:1)**
+
+<p align="center">
+  <img src="Screenshots/Vista_General.png" alt="Vista General del Jardín Zen VR" width="100%">
+</p>
 
 ---
 
@@ -44,7 +48,7 @@ Siga estos sencillos pasos para cargar, verificar y experimentar la escena corre
    ```text
    Assets / Scenes / ZenGardenVR.unity
    ```
-2. Haga doble clic en **`ZenGardenVR.unity`** para abrir la escena en el Editor.
+2. Haga doble clic en **`ZenGardenVR.unity`** para abrir la escena en el Editor.  
    *(Nota de respaldo: Si desea regenerar la escena completa desde cero en cualquier momento, puede ir al menú superior de Unity: `Herramientas VR` > `Generar Escena Completa`).*
 
 ### Paso 3: Verificar la Configuración de OpenXR
@@ -80,8 +84,6 @@ Siga estos sencillos pasos para cargar, verificar y experimentar la escena corre
 
 ## 5. Justificación Técnica de la Rúbrica de Evaluación
 
-A continuación se detalla cómo el proyecto satisface con rigor cada uno de los criterios exigidos en la rúbrica del curso:
-
 | Criterio de la Rúbrica | Implementación en el Proyecto | Justificación Técnica |
 | :--- | :--- | :--- |
 | **1. Múltiples Objetos 3D Primitivos** | Cubos, Cilindros, Esferas y Planos combinados armónicamente. | **Planos:** Superficie de arena zen ($24\times24\text{ m}$) y tatami ceremonial.<br>**Cubos:** Plataformas escalonadas, vigas de techumbre, dintel y travesaño Torii, muros y patas del altar.<br>**Cilindros:** Columnas del templo, pilares del Torii, fustes de farolas, cuerpo de la campana zen y estanque circular.<br>**Esferas:** Piedras naturales del jardín, cúpulas de linternas, remate *Hōju*, quemador de incienso y flor de loto. |
@@ -89,7 +91,30 @@ A continuación se detalla cómo el proyecto satisface con rigor cada uno de los
 | **3. Materiales con Texturas Mapeadas** | 8 Texturas procedurales PBR con repetición (*tiling*). | Se programó un generador procedural (`Texture2D`) que crea y guarda archivos PNG nativos en `Assets/ZenGarden_VR/Texturas/`: arena zen rastrillada, madera de cedro rojo, teca oscura, piedra musgosa, agua cáustica, papel *shoji* translúcido, oro cepillado y hojas de loto. Los materiales configuran propiedades PBR completas (*Base Color*, *Base Map*, *Metallic*, *Smoothness* y *Emission*), con factores de repetición calibrados métricamente. |
 | **4. Escala Humana para RV (1:1 en metros)** | 1 Unidad de Unity = 1 Metro real.<br>Altura de ojos = 1.65 m. | Toda la arquitectura respeta proporciones ergonómicas reales: altura del Torii de $3.8\text{ m}$, mesa de altar a $0.85\text{ m}$, peldaños de $0.15\text{ m}$, farolas de $2.1\text{ m}$. El rig de cámara (`[VR Rig] Jugador`) posiciona la `Main Camera` a una altura local exacta de **$Y = 1.65\text{ m}$** (promedio antropométrico de visión humana) y cuenta con el componente estándar **`TrackedPoseDriver`** para seguimiento de cabeza. |
 | **5. Iluminación y Sombras Suaves** | Directional Light zen matutina + Point Lights ornamentales. | La escena cuenta con una `Directional Light` principal (`Sol_Meditativo_VR`) orientada a $46^\circ$ con temperatura cálida ($1.0, 0.96, 0.88$) y **Soft Shadows** activadas para evitar sombras duras poco naturales. Adicionalmente, cuenta con tres `Point Lights` con sombras suaves: dos dentro de las cámaras de papel de las linternas de piedra ($4.5\text{ m}$ de alcance, tono ámbar cálido) y una sobre el altar. |
-| **6. Extras Opcionales (Animación y Audio)** | Script `RotadorSuave.cs` + Audio continuo en formato WAV. | **Animación:** El orbe de cristal sobre el altar incorpora el componente [`RotadorSuave.cs`]() que aplica una rotación suave y configurable sobre el eje Y ($30^\circ/\text{s}$).<br>**Audio:** Un GameObject `Emisor_Audio_Ambiental` con `AudioSource` configurado en bucle reproduce un clip de audio de cuenco tibetano zen sintetizado matemáticamente en PCM WAV de 16 bits sin dependencias externas. |
+| **6. Extras Opcionales (Animación y Audio)** | Script `RotadorSuave.cs` + Audio continuo en formato WAV. | **Animación:** El orbe de cristal sobre el altar incorpora el componente `RotadorSuave.cs` que aplica una rotación suave y configurable sobre el eje Y ($30^\circ/\text{s}$).<br>**Audio:** Un GameObject `Emisor_Audio_Ambiental` con `AudioSource` configurado en bucle reproduce un clip de audio de cuenco tibetano zen sintetizado matemáticamente en PCM WAV de 16 bits sin dependencias externas. |
 
 ---
 
+## 6. Capturas de Pantalla y Textos de Leyenda
+
+### Galería Visual del Proyecto en Unity
+
+| Vista Inmersiva de la Escena (1:1) | Jerarquía y Configuración de Cámara VR (Inspector) |
+| :---: | :---: |
+| ![Vista Inmersiva](Screenshots/Vista_General.png) | ![Inspector VR](Screenshots/Inspector_VR.png) |
+
+---
+
+### Leyenda para la Captura de Pantalla del Proyecto
+
+> **Archivo:** `Captura_ZenGardenVR_Inspector.png` (o `Screenshots/Inspector_VR.png`)  
+> **Leyenda / Comentario de la Imagen:**  
+> *"Captura general del proyecto en Unity Editor mostrando la escena `ZenGardenVR.unity`. En la ventana Scene se aprecia la perspectiva inmersiva del jardín zen a escala 1:1 tomada desde el punto de vista del usuario (Y = 1.65 m), observándose el portal Torii, el camino de piedras, las farolas de piedra con iluminación puntual cálida, el estanque de lotos reflectante y la pagoda meditativa al fondo iluminada por el sol zen con sombras suaves. En el panel Hierarchy se evidencia la estricta organización jerárquica mediante GameObjects vacíos padres, y en el Inspector se destaca la selección de la Main Camera con el componente TrackedPoseDriver y la posición calibrada a 1.65 metros."*
+
+---
+
+### Leyenda para el Archivo Comprimido ZIP
+
+> **Archivo:** `ZenGardenVR_Entrega_PeerReview.zip`  
+> **Leyenda / Comentario de Entrega:**  
+> *"El archivo comprimido ZIP contiene la estructura limpia, canónica y completa del proyecto Unity necesaria para su evaluación: carpetas `Assets` (incluyendo escenas, scripts de editor y runtime, texturas y materiales), `Packages` (con el manifiesto de dependencias URP, Input System y XR) y `ProjectSettings` (con la configuración de calidad, físicas, tags y OpenXR). Se han omitido deliberadamente las carpetas temporales generadas localmente (`Library`, `Temp`, `Logs`, `Builds`) para evitar redundancia de datos, garantizar un peso óptimo de descarga y asegurar una importación limpia y reproducible en el equipo del evaluador."*
