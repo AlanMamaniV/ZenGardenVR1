@@ -1,7 +1,7 @@
 # Zen Garden VR: Entorno Inmersivo Contemplativo y Templo Meditativo a Escala Humana 1:1
 
 **Documento de Entrega para Evaluación Entre Pares (Peer Review)**  
-**Curso:** Realidad Virtual Avanzada en Unity  
+**Curso:** Realidad Virtual  
 **Entorno de Desarrollo:** Unity 6 / URP (Universal Render Pipeline)  
 **Estándar XR:** OpenXR / Unity Input System (XR Tracked Pose Driver)  
 

@@ -1,7 +1,7 @@
 # Zen Garden VR: Immersive Contemplative Sanctuary and Meditative Temple at 1:1 Human Scale
 
 **Peer Review Submission Document**  
-**Course:** Advanced Virtual Reality in Unity  
+**Course:** Virtual Reality  
 **Development Environment:** Unity 6 / Universal Render Pipeline (URP)  
 **XR Standard:** OpenXR / Unity Input System (`TrackedPoseDriver`)  
 
